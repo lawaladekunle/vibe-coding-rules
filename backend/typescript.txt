@@ -1,0 +1,85 @@
+TypeScript Backend Development Guide for AI Assistant
+Project Overview
+* Stack: TypeScript-based backend development
+* Purpose: Standardize AI-assisted code generation for TypeScript backend applications
+Coding Standards
+TypeScript Style
+* Use 2-space indentation
+* Prefer const over let, avoid var
+* Use strong typing; avoid any type when possible
+* Use PascalCase for interfaces, types, and classes
+* Use camelCase for variables, functions, and methods
+* Use UPPER_SNAKE_CASE for constants
+* Use meaningful, descriptive names
+* Add return type annotations to functions
+Project Structure
+src/
+├── api/             # API controllers and routes
+├── config/          # Application configuration
+├── middleware/      # Express/Koa/etc. middleware
+├── models/          # Data models and interfaces
+├── services/        # Business logic and external integrations
+├── utils/           # Helper functions and utilities
+├── types/           # Custom type definitions
+├── index.ts         # Application entry point
+test/                # Test files
+dist/                # Compiled JavaScript (gitignored)
+.env                 # Environment variables (gitignored)
+tsconfig.json        # TypeScript configuration
+package.json         # Dependencies and scripts
+TypeScript Configuration
+* Enable strict mode in tsconfig.json
+* Use ESM modules ("module": "ESNext")
+* Target modern Node.js versions ("target": "ES2022")
+* Enable source maps for debugging
+* Configure path aliases for cleaner imports
+Best Practices
+* Use dependency injection for testability
+* Implement the repository pattern for data access
+* Use interfaces for contracts between modules
+* Separate business logic from HTTP concerns
+* Use DTOs (Data Transfer Objects) for API requests/responses
+* Implement error handling with custom error classes
+* Use environment variables for configuration
+* Leverage TypeScript's type system for domain modeling
+Database Interaction
+* Use TypeORM, Prisma, or Sequelize with TypeScript support
+* Define entity models with proper typing
+* Use migrations for database schema changes
+* Implement repository pattern for data access logic
+* Use transactions for multi-step operations
+API Development
+* Use Express, Nest.js, or Koa with TypeScript support
+* Implement consistent error handling middleware
+* Use strong typing for request/response objects
+* Validate input with libraries like zod, joi, or class-validator
+* Document APIs with OpenAPI/Swagger
+* Use versioning for API endpoints
+* Implement proper HTTP status codes and response formats
+Authentication & Security
+* Implement JWT or OAuth2 for authentication
+* Store password hashes, never plaintext
+* Implement role-based access control (RBAC)
+* Validate and sanitize all inputs
+* Use HTTPS in production
+* Implement rate limiting for API endpoints
+* Follow OWASP security guidelines
+Testing
+* Use Jest or Mocha with ts-jest for testing
+* Write unit tests for services and utilities
+* Write integration tests for API endpoints
+* Use test doubles (mocks, stubs) for external dependencies
+* Implement CI/CD pipeline for automated testing
+* Aim for high test coverage on critical paths
+Logging & Monitoring
+* Use structured logging (Winston, Pino)
+* Include request IDs for traceability
+* Log appropriate detail for different environments
+* Implement health check endpoints
+* Set up monitoring for performance metrics
+Build & Deployment
+* Use Docker for containerization
+* Create proper .dockerignore and .gitignore files
+* Implement multi-stage Docker builds
+* Set up CI/CD pipeline for automated deployment
+* Use environment variables for configuration
