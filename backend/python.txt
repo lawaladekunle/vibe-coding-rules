@@ -1,0 +1,66 @@
+Python Backend Development Guide for AI Assistant
+Project Overview
+* Stack: Python-based backend development
+* Purpose: Standardize AI-assisted code generation for Python backend applications
+Coding Standards
+Python Style
+* Follow PEP 8 style guidelines for code formatting
+* Use 4 spaces for indentation (no tabs)
+* Maximum line length of 88 characters (Black formatter standard)
+* Use snake_case for functions, variables, and module names
+* Use PascalCase for class names
+* Use UPPER_SNAKE_CASE for constants
+* Use meaningful, descriptive variable and function names
+Project Structure
+project_name/
+├── api/                # API endpoints and routing
+├── core/               # Core business logic
+├── models/             # Data models and schemas
+├── services/           # External service integrations
+├── utils/              # Utility functions and helpers
+├── tests/              # Test cases
+├── config.py           # Configuration management
+├── main.py             # Application entry point
+└── requirements.txt    # Dependencies
+Best Practices
+* Create modular, reusable components with single responsibility
+* Document functions and classes using docstrings (Google or NumPy format)
+* Use type hints for function parameters and return values
+* Implement proper error handling and logging
+* Use environment variables for configuration
+* Never commit sensitive information (API keys, passwords)
+Database Interaction
+* Use an ORM like SQLAlchemy or Django ORM for database operations
+* Implement data models with clear relationships
+* Write migrations for schema changes
+* Use connection pooling for database efficiency
+* Implement proper transaction management
+API Development
+* Follow RESTful principles for API design
+* Implement versioning for APIs
+* Use consistent response formats
+* Validate input data with schema validation
+* Include proper HTTP status codes
+Authentication & Security
+* Implement proper authentication (JWT, OAuth)
+* Use password hashing for user credentials
+* Sanitize all user inputs
+* Implement rate limiting for API endpoints
+* Follow OWASP security guidelines
+Testing
+* Write unit tests for business logic
+* Write integration tests for API endpoints
+* Aim for at least 80% test coverage
+* Implement continuous integration
+* Use pytest as the testing framework
+Performance Considerations
+* Use asynchronous programming where appropriate (asyncio)
+* Implement caching strategies for frequent operations
+* Optimize database queries (indexing, query optimization)
+* Use connection pooling for external services
+* Profile code performance for critical paths
+Dependencies
+* Maintain a clear requirements.txt or pyproject.toml
+* Use virtual environments for isolation
+* Pin dependency versions for reproducibility
+* Regularly update dependencies for security patches
