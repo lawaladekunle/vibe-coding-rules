@@ -1,0 +1,140 @@
+# PHP Backend Development Guide for AI Assistant
+
+## Project Overview
+- **Stack**: PHP-based backend development
+- **Purpose**: Standardize AI-assisted code generation for PHP backend applications
+
+## Coding Standards
+
+### PHP Style
+- Follow PSR-12 coding standards
+- Use 4 spaces for indentation
+- Use camelCase for variables and methods
+- Use PascalCase for classes
+- Use UPPER_SNAKE_CASE for constants
+- Limit line length to 120 characters
+- Use descriptive, meaningful names for variables, methods, and classes
+- Use type hints and return types
+- Use strict typing (declare(strict_types=1))
+- Use constructor property promotion (PHP 8.0+)
+- Use named arguments (PHP 8.0+)
+- Use attributes (PHP 8.0+)
+- Use enums (PHP 8.1+)
+- Use readonly properties (PHP 8.1+)
+- Use first-class callable syntax (PHP 8.1+)
+
+### Project Structure
+```
+src/
+├── config/           # Configuration files
+├── src/             # Source code
+│   ├── Controllers/ # Controller classes
+│   ├── Models/      # Model classes
+│   ├── Services/    # Service classes
+│   ├── Repositories/# Repository classes
+│   ├── Middleware/  # Middleware classes
+│   ├── Exceptions/  # Custom exceptions
+│   └── Utils/       # Utility classes
+├── tests/           # Test files
+├── public/          # Public directory
+├── resources/       # Resource files
+├── routes/          # Route definitions
+├── storage/         # Storage directory
+├── vendor/          # Composer dependencies
+├── composer.json    # Composer configuration
+└── phpunit.xml     # PHPUnit configuration
+```
+
+### Best Practices
+- Follow SOLID principles
+- Use dependency injection
+- Implement proper error handling
+- Use async/await for asynchronous operations
+- Use proper form validation
+- Implement proper state management
+- Use proper routing system
+- Follow component composition patterns
+- Use proper lifecycle hooks
+- Implement proper prop validation
+- Use proper logging
+- Implement proper caching
+
+### PHP Version
+- Use PHP 8.2+ for new projects
+- Use typed properties
+- Use constructor property promotion
+- Use named arguments
+- Use attributes
+- Use enums
+- Use readonly properties
+- Use first-class callable syntax
+
+### Database Interaction
+- Use PDO for database connections
+- Use prepared statements
+- Implement proper transaction management
+- Use proper connection pooling
+- Apply proper database indexing
+- Use proper ORM (Doctrine/Eloquent)
+- Implement proper migrations
+- Use proper database backups
+
+### API Development
+- Follow RESTful API design principles
+- Use proper HTTP status codes
+- Implement proper API versioning
+- Document APIs with OpenAPI/Swagger
+- Use proper response formats
+- Implement proper pagination
+- Use proper rate limiting
+- Implement proper API security
+
+### Authentication & Security
+- Use proper password hashing (password_hash)
+- Implement proper session management
+- Use proper CSRF protection
+- Implement proper XSS protection
+- Use proper input validation
+- Implement proper output encoding
+- Use proper security headers
+- Follow OWASP security guidelines
+
+### Testing
+- Use PHPUnit for unit testing
+- Use PHPStan for static analysis
+- Use PHP_CodeSniffer for code style
+- Implement proper integration tests
+- Use proper test fixtures
+- Implement proper mocking
+- Use proper test coverage
+- Implement proper CI/CD pipeline
+
+### Performance
+- Use proper caching strategies
+- Implement proper lazy loading
+- Use proper database optimization
+- Implement proper code optimization
+- Use proper memory management
+- Implement proper load balancing
+- Use proper CDN integration
+- Implement proper monitoring
+
+### Build & Deployment
+- Use Composer for dependency management
+- Implement proper environment configurations
+- Use proper build optimization
+- Implement proper deployment strategies
+- Use proper CI/CD pipeline
+- Implement proper versioning
+- Use proper monitoring
+- Implement proper error tracking
+
+### Logging & Monitoring
+- Use proper logging levels
+- Implement proper log rotation
+- Use proper log aggregation
+- Implement proper error tracking
+- Use proper performance monitoring
+- Implement proper health checks
+- Use proper metrics collection
+- Implement proper alerting 

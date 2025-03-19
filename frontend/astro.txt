@@ -1,0 +1,139 @@
+# Astro Frontend Development Guide for AI Assistant
+
+## Project Overview
+- **Stack**: Astro-based frontend development
+- **Purpose**: Standardize AI-assisted code generation for Astro frontend applications
+
+## Coding Standards
+
+### Astro Style
+- Follow Astro Style Guide
+- Use 2 spaces for indentation
+- Use camelCase for variables and methods
+- Use PascalCase for components
+- Use UPPER_SNAKE_CASE for constants
+- Limit line length to 100 characters
+- Use descriptive, meaningful names for components and variables
+- Follow Astro naming conventions for files and folders
+- Use TypeScript for type safety
+- Use interfaces for type definitions
+- Use enums for constant values
+- Use readonly for immutable properties
+
+### Project Structure
+```
+src/
+├── components/       # Reusable components
+│   ├── ui/         # UI components
+│   └── features/   # Feature components
+├── layouts/         # Layout components
+├── pages/          # Page components
+├── styles/         # Global styles
+├── utils/          # Utility functions
+├── types/          # TypeScript types
+└── public/         # Static assets
+```
+
+### Best Practices
+- Follow Astro best practices and patterns
+- Use Astro 4+ for new projects
+- Implement proper error handling
+- Use async/await for asynchronous operations
+- Use Astro's partial hydration effectively
+- Implement proper form validation
+- Use proper data fetching methods
+- Implement proper state management
+- Use Astro routing system
+- Follow component composition patterns
+- Use proper lifecycle hooks
+- Implement proper prop validation
+
+### Astro Version
+- Use Astro 4+ for new projects
+- Use TypeScript for type safety
+- Use View Transitions API
+- Use Content Collections
+- Use Image Optimization
+- Use API Routes
+- Use Middleware
+- Use Environment Variables
+
+### Component Development
+- Follow single responsibility principle
+- Use presentational and container components
+- Implement proper component communication
+- Use proper component lifecycle hooks
+- Implement proper error boundaries
+- Use proper component styling
+- Implement proper accessibility
+- Use proper component testing
+
+### State Management
+- Use client-side state when needed
+- Implement proper store architecture
+- Use proper store actions
+- Implement proper store persistence
+- Use proper store middleware
+- Implement proper store validation
+- Use proper store hydration
+- Implement proper store synchronization
+
+### Routing
+- Use Astro routing system
+- Implement proper route guards
+- Use proper route parameters
+- Implement proper route loading
+- Use proper route layouts
+- Implement proper route transitions
+- Use proper route data loading
+- Implement proper route error handling
+
+### Testing
+- Use Vitest for unit testing
+- Use Playwright for E2E testing
+- Implement proper component testing
+- Use proper API testing
+- Implement proper route testing
+- Use proper integration testing
+- Implement proper performance testing
+- Use proper accessibility testing
+
+### Performance
+- Implement proper partial hydration
+- Use proper component caching
+- Implement proper bundle optimization
+- Use proper image optimization
+- Implement proper caching strategies
+- Use proper code splitting
+- Implement proper tree shaking
+- Use proper performance monitoring
+
+### Security
+- Implement proper XSS protection
+- Use proper CSRF protection
+- Implement proper authentication
+- Use proper authorization
+- Implement proper input validation
+- Use proper output encoding
+- Implement proper security headers
+- Use proper security best practices
+
+### Build & Deployment
+- Use Astro build system
+- Implement proper environment configurations
+- Use proper build optimization
+- Implement proper deployment strategies
+- Use proper CI/CD pipeline
+- Implement proper versioning
+- Use proper monitoring
+- Implement proper error tracking
+
+### Accessibility
+- Follow WCAG guidelines
+- Implement proper ARIA attributes
+- Use proper semantic HTML
+- Implement proper keyboard navigation
+- Use proper color contrast
+- Implement proper screen reader support
+- Use proper focus management
+- Implement proper accessibility testing 

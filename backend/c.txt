@@ -1,0 +1,111 @@
+C Backend Development Guide for AI Assistant
+Project Overview
+* Stack: C-based backend development
+* Purpose: Standardize AI-assisted code generation for C backend applications
+
+Coding Standards
+C Style
+* Follow GNU C coding style guidelines
+* Use 4 spaces for indentation (no tabs)
+* Maximum line length of 80 characters
+* Use snake_case for functions and variables
+* Use UPPER_SNAKE_CASE for constants and macros
+* Use meaningful, descriptive variable and function names
+* Place opening braces on the same line as the control statement
+* Place closing braces on their own line
+* Use parentheses to clarify operator precedence
+
+Project Structure
+project_name/
+├── include/            # Header files
+├── src/               # Source files
+├── lib/               # Third-party libraries
+├── tests/             # Test files
+├── docs/              # Documentation
+├── build/             # Build artifacts
+├── Makefile          # Build configuration
+└── README.md         # Project documentation
+
+Best Practices
+* Create modular, reusable components with single responsibility
+* Use header guards (#ifndef, #define, #endif)
+* Document functions using Doxygen-style comments
+* Implement proper error handling and logging
+* Use environment variables for configuration
+* Never commit sensitive information
+* Use const where appropriate
+* Avoid global variables
+* Use static for internal linkage
+* Implement proper memory management
+
+Memory Management
+* Always check malloc/calloc/realloc return values
+* Free allocated memory when no longer needed
+* Use valgrind or similar tools for memory leak detection
+* Implement proper error handling for memory operations
+* Use memory pools for frequently allocated objects
+* Consider using arena allocators for better performance
+
+Data Structures
+* Implement proper data structure abstractions
+* Use structs for related data grouping
+* Implement proper encapsulation
+* Use typedef for cleaner type names
+* Consider using unions for memory optimization
+* Implement proper iterator patterns
+
+Error Handling
+* Use return codes for error reporting
+* Implement proper error propagation
+* Use errno for system errors
+* Create custom error types when needed
+* Implement proper cleanup in error cases
+* Use goto for cleanup in complex functions
+
+Security
+* Use secure string functions (strncpy, snprintf)
+* Implement proper input validation
+* Use secure random number generation
+* Implement proper buffer overflow protection
+* Follow OWASP security guidelines
+* Use secure coding practices
+
+Testing
+* Write unit tests for all functions
+* Implement integration tests
+* Use test frameworks (Unity, CUnit)
+* Implement proper test isolation
+* Use mocking for external dependencies
+* Implement continuous integration
+
+Performance Considerations
+* Profile code performance
+* Optimize critical paths
+* Use appropriate data structures
+* Implement caching strategies
+* Consider using SIMD instructions
+* Optimize memory usage
+
+Build System
+* Use Make or CMake for build management
+* Implement proper dependency management
+* Use compiler warnings and optimizations
+* Implement proper versioning
+* Use conditional compilation
+* Implement proper installation targets
+
+Dependencies
+* Document external dependencies
+* Use package managers when appropriate
+* Implement proper version control
+* Consider using vendoring for dependencies
+* Document build requirements
+* Implement proper dependency isolation
+
+Documentation
+* Document all public APIs
+* Include usage examples
+* Document build and installation
+* Include troubleshooting guides
+* Document performance considerations
+* Include security guidelines 
