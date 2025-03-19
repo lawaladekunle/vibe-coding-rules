@@ -1,0 +1,143 @@
+# Kotlin Backend Development Guide for AI Assistant
+
+## Project Overview
+- **Stack**: Kotlin-based backend development
+- **Purpose**: Standardize AI-assisted code generation for Kotlin backend applications
+
+## Coding Standards
+
+### Kotlin Style
+- Follow Kotlin Style Guide
+- Use 4 spaces for indentation
+- Use camelCase for variables and methods
+- Use PascalCase for classes
+- Use UPPER_SNAKE_CASE for constants
+- Limit line length to 120 characters
+- Use descriptive, meaningful names for variables, methods, and classes
+- Use proper null safety features
+- Use proper data classes
+- Use proper sealed classes
+- Use proper coroutines
+- Use proper extension functions
+- Use proper operator overloading
+- Use proper type inference
+- Use proper smart casts
+
+### Project Structure
+```
+src/
+├── main/
+│   ├── kotlin/
+│   │   └── com/company/
+│   │       ├── config/        # Configuration
+│   │       ├── controller/    # Controllers
+│   │       ├── model/         # Data models
+│   │       ├── repository/    # Data access
+│   │       ├── service/       # Business logic
+│   │       ├── util/          # Utilities
+│   │       └── Application.kt # Main application
+│   └── resources/
+│       └── application.yml   # Application config
+├── test/
+│   └── kotlin/
+│       └── com/company/
+│           ├── controller/    # Controller tests
+│           ├── repository/    # Repository tests
+│           └── service/       # Service tests
+├── build.gradle.kts          # Gradle configuration
+└── settings.gradle.kts       # Gradle settings
+```
+
+### Best Practices
+- Follow Kotlin best practices
+- Use dependency injection
+- Implement proper error handling
+- Use proper coroutine patterns
+- Use proper flow patterns
+- Implement proper state management
+- Use proper routing system
+- Follow component composition patterns
+- Use proper lifecycle hooks
+- Implement proper prop validation
+- Use proper logging
+- Implement proper caching
+
+### Kotlin Version
+- Use Kotlin 1.9+ for new projects
+- Use Kotlin Coroutines
+- Use Kotlin Flow
+- Use Kotlin Serialization
+- Use Kotlin DSL
+- Use Kotlin Multiplatform
+- Use Kotlin Native
+- Use Kotlin Scripting
+
+### Database Interaction
+- Use Exposed for SQL
+- Use proper connection pooling
+- Implement proper transaction management
+- Use proper database indexing
+- Implement proper migrations
+- Use proper database backups
+- Use proper query optimization
+- Implement proper caching
+
+### API Development
+- Follow RESTful API design principles
+- Use proper HTTP status codes
+- Implement proper API versioning
+- Document APIs with OpenAPI/Swagger
+- Use proper response formats
+- Implement proper pagination
+- Use proper rate limiting
+- Implement proper API security
+
+### Authentication & Security
+- Use JWT for authentication
+- Implement proper session management
+- Use proper CSRF protection
+- Implement proper XSS protection
+- Use proper input validation
+- Implement proper output encoding
+- Use proper security headers
+- Follow OWASP security guidelines
+
+### Testing
+- Use JUnit 5 for unit testing
+- Use MockK for mocking
+- Use proper test fixtures
+- Implement proper integration tests
+- Use proper property-based testing
+- Implement proper load testing
+- Use proper test coverage
+- Implement proper CI/CD pipeline
+
+### Performance
+- Use proper caching strategies
+- Implement proper lazy loading
+- Use proper database optimization
+- Implement proper code optimization
+- Use proper memory management
+- Implement proper load balancing
+- Use proper CDN integration
+- Implement proper monitoring
+
+### Build & Deployment
+- Use Gradle for dependency management
+- Implement proper environment configurations
+- Use proper build optimization
+- Implement proper deployment strategies
+- Use proper CI/CD pipeline
+- Implement proper versioning
+- Use proper monitoring
+- Implement proper error tracking
+
+### Logging & Monitoring
+- Use SLF4J for logging
+- Implement proper log rotation
+- Use proper log aggregation
+- Implement proper error tracking
+- Use proper performance monitoring
+- Implement proper health checks
+- Use proper metrics collection
+- Implement proper alerting 

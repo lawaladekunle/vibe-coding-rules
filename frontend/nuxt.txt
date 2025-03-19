@@ -1,0 +1,142 @@
+# Nuxt.js Frontend Development Guide for AI Assistant
+
+## Project Overview
+- **Stack**: Nuxt.js-based frontend development
+- **Purpose**: Standardize AI-assisted code generation for Nuxt.js frontend applications
+
+## Coding Standards
+
+### Nuxt.js Style
+- Follow Nuxt.js Style Guide
+- Use 2 spaces for indentation
+- Use camelCase for variables and methods
+- Use PascalCase for components
+- Use UPPER_SNAKE_CASE for constants
+- Limit line length to 100 characters
+- Use descriptive, meaningful names for components and variables
+- Follow Nuxt.js naming conventions for files and folders
+- Use TypeScript for type safety
+- Use interfaces for type definitions
+- Use enums for constant values
+- Use readonly for immutable properties
+
+### Project Structure
+```
+├── app.vue           # App entry point
+├── components/       # Auto-imported components
+├── composables/      # Auto-imported composables
+├── layouts/          # Layout components
+├── pages/           # Auto-imported pages
+├── plugins/         # Auto-imported plugins
+├── public/          # Static assets
+├── server/          # Server-side code
+│   ├── api/        # API routes
+│   └── middleware/ # Server middleware
+├── stores/          # Pinia stores
+├── types/           # TypeScript types
+└── utils/           # Utility functions
+```
+
+### Best Practices
+- Follow Nuxt.js best practices and patterns
+- Use Nuxt 3 for new projects
+- Implement proper error handling
+- Use async/await for asynchronous operations
+- Use Nuxt's auto-imports effectively
+- Implement proper form validation
+- Use v-model for form bindings
+- Implement proper state management
+- Use Nuxt routing system
+- Follow component composition patterns
+- Use proper lifecycle hooks
+- Implement proper prop validation
+
+### Nuxt.js Version
+- Use Nuxt 3 for new projects
+- Use Composition API
+- Use TypeScript for type safety
+- Use Nuxt Content for content management
+- Use Nuxt Image for image optimization
+- Use Nuxt Auth for authentication
+- Use Nuxt API for API calls
+- Use Nuxt Config for configuration
+
+### Component Development
+- Follow single responsibility principle
+- Use presentational and container components
+- Implement proper component communication
+- Use proper component lifecycle hooks
+- Implement proper error boundaries
+- Use proper component styling
+- Implement proper accessibility
+- Use proper component testing
+
+### State Management
+- Use Pinia for state management
+- Implement proper store architecture
+- Use proper store modules
+- Implement proper store actions
+- Use proper store mutations
+- Implement proper store getters
+- Use proper state persistence
+- Implement proper store plugins
+
+### Routing
+- Use Nuxt routing system
+- Implement proper route guards
+- Use proper route parameters
+- Implement proper route loading
+- Use proper route layouts
+- Implement proper route transitions
+- Use proper route data loading
+- Implement proper route error handling
+
+### Testing
+- Use Vitest for unit testing
+- Use @nuxt/test-utils for component testing
+- Use Cypress for E2E testing
+- Implement proper component testing
+- Use proper API testing
+- Implement proper route testing
+- Use proper integration testing
+- Implement proper performance testing
+
+### Performance
+- Implement proper lazy loading
+- Use proper component caching
+- Implement proper bundle optimization
+- Use proper image optimization
+- Implement proper caching strategies
+- Use proper code splitting
+- Implement proper tree shaking
+- Use proper performance monitoring
+
+### Security
+- Implement proper XSS protection
+- Use proper CSRF protection
+- Implement proper authentication
+- Use proper authorization
+- Implement proper input validation
+- Use proper output encoding
+- Implement proper security headers
+- Use proper security best practices
+
+### Build & Deployment
+- Use Nuxt build system
+- Implement proper environment configurations
+- Use proper build optimization
+- Implement proper deployment strategies
+- Use proper CI/CD pipeline
+- Implement proper versioning
+- Use proper monitoring
+- Implement proper error tracking
+
+### Accessibility
+- Follow WCAG guidelines
+- Implement proper ARIA attributes
+- Use proper semantic HTML
+- Implement proper keyboard navigation
+- Use proper color contrast
+- Implement proper screen reader support
+- Use proper focus management
+- Implement proper accessibility testing 

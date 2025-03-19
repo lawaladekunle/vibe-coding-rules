@@ -1,0 +1,142 @@
+# Go Backend Development Guide for AI Assistant
+
+## Project Overview
+- **Stack**: Go-based backend development
+- **Purpose**: Standardize AI-assisted code generation for Go backend applications
+
+## Coding Standards
+
+### Go Style
+- Follow Go Style Guide
+- Use tabs for indentation
+- Use camelCase for variables and methods
+- Use PascalCase for exported names
+- Use UPPER_SNAKE_CASE for constants
+- Limit line length to 120 characters
+- Use descriptive, meaningful names for variables, methods, and types
+- Use proper error handling
+- Use proper context handling
+- Use proper goroutine management
+- Use proper channel patterns
+- Use proper interface design
+- Use proper package organization
+- Use proper dependency injection
+
+### Project Structure
+```
+cmd/
+└── api/            # Application entry point
+internal/           # Private application code
+├── config/        # Configuration
+├── handler/       # HTTP handlers
+├── middleware/    # HTTP middleware
+├── model/         # Data models
+├── repository/    # Data access
+├── service/       # Business logic
+└── pkg/           # Private packages
+pkg/               # Public packages
+├── logger/        # Logging package
+└── utils/         # Utility functions
+api/               # API definitions
+├── proto/         # Protocol buffers
+└── swagger/       # OpenAPI specs
+test/              # Test files
+├── integration/   # Integration tests
+└── e2e/          # End-to-end tests
+go.mod             # Go module definition
+go.sum             # Go module checksums
+```
+
+### Best Practices
+- Follow Go best practices
+- Use dependency injection
+- Implement proper error handling
+- Use proper goroutine patterns
+- Use proper channel patterns
+- Implement proper state management
+- Use proper routing system
+- Follow component composition patterns
+- Use proper lifecycle hooks
+- Implement proper prop validation
+- Use proper logging
+- Implement proper caching
+
+### Go Version
+- Use Go 1.21+ for new projects
+- Use generics (Go 1.18+)
+- Use workspace mode (Go 1.18+)
+- Use embed directive
+- Use fuzzing (Go 1.18+)
+- Use go:build constraints
+- Use go:embed
+- Use go:generate
+
+### Database Interaction
+- Use GORM for ORM
+- Use proper connection pooling
+- Implement proper transaction management
+- Use proper database indexing
+- Implement proper migrations
+- Use proper database backups
+- Use proper query optimization
+- Implement proper caching
+
+### API Development
+- Follow RESTful API design principles
+- Use proper HTTP status codes
+- Implement proper API versioning
+- Document APIs with OpenAPI/Swagger
+- Use proper response formats
+- Implement proper pagination
+- Use proper rate limiting
+- Implement proper API security
+
+### Authentication & Security
+- Use JWT for authentication
+- Implement proper session management
+- Use proper CSRF protection
+- Implement proper XSS protection
+- Use proper input validation
+- Implement proper output encoding
+- Use proper security headers
+- Follow OWASP security guidelines
+
+### Testing
+- Use testing package for unit testing
+- Use testify for assertions
+- Use mockery for mocking
+- Implement proper integration tests
+- Use proper test fixtures
+- Implement proper table-driven tests
+- Use proper test coverage
+- Implement proper CI/CD pipeline
+
+### Performance
+- Use proper caching strategies
+- Implement proper lazy loading
+- Use proper database optimization
+- Implement proper code optimization
+- Use proper memory management
+- Implement proper load balancing
+- Use proper CDN integration
+- Implement proper monitoring
+
+### Build & Deployment
+- Use Go modules for dependency management
+- Implement proper environment configurations
+- Use proper build optimization
+- Implement proper deployment strategies
+- Use proper CI/CD pipeline
+- Implement proper versioning
+- Use proper monitoring
+- Implement proper error tracking
+
+### Logging & Monitoring
+- Use zap/zerolog for logging
+- Implement proper log rotation
+- Use proper log aggregation
+- Implement proper error tracking
+- Use proper performance monitoring
+- Implement proper health checks
+- Use proper metrics collection
+- Implement proper alerting 

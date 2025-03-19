@@ -1,0 +1,141 @@
+# Elixir Backend Development Guide for AI Assistant
+
+## Project Overview
+- **Stack**: Elixir-based backend development
+- **Purpose**: Standardize AI-assisted code generation for Elixir backend applications
+
+## Coding Standards
+
+### Elixir Style
+- Follow Elixir Style Guide
+- Use 2 spaces for indentation
+- Use snake_case for variables and functions
+- Use PascalCase for modules
+- Use UPPER_SNAKE_CASE for constants
+- Limit line length to 100 characters
+- Use descriptive, meaningful names for variables, functions, and modules
+- Use proper pattern matching
+- Use proper pipe operator
+- Use proper guard clauses
+- Use proper function heads
+- Use proper module attributes
+- Use proper type specs
+- Use proper documentation
+
+### Project Structure
+```
+lib/
+├── my_app/           # Application namespace
+│   ├── application.ex # Application callback
+│   ├── repo.ex       # Database repository
+│   ├── web/          # Web-related code
+│   │   ├── controllers/
+│   │   ├── views/
+│   │   ├── templates/
+│   │   └── router.ex
+│   ├── accounts/     # Context modules
+│   │   ├── user.ex
+│   │   ├── user.exs
+│   │   └── accounts.ex
+│   └── core/         # Core functionality
+├── config/           # Configuration files
+├── test/             # Test files
+├── priv/             # Private files
+├── assets/           # Frontend assets
+├── mix.exs           # Project configuration
+└── mix.lock          # Dependency lock file
+```
+
+### Best Practices
+- Follow Elixir best practices
+- Use dependency injection
+- Implement proper error handling
+- Use proper process patterns
+- Use proper supervision trees
+- Implement proper state management
+- Use proper routing system
+- Follow component composition patterns
+- Use proper lifecycle hooks
+- Implement proper prop validation
+- Use proper logging
+- Implement proper caching
+
+### Elixir Version
+- Use Elixir 1.15+ for new projects
+- Use Phoenix 1.7+ for web applications
+- Use proper type specs
+- Use proper behaviours
+- Use proper protocols
+- Use proper macros
+- Use proper metaprogramming
+- Use proper compile-time features
+
+### Database Interaction
+- Use Ecto for database access
+- Use proper connection pooling
+- Implement proper transaction management
+- Use proper database indexing
+- Implement proper migrations
+- Use proper database backups
+- Use proper query optimization
+- Implement proper caching
+
+### API Development
+- Follow RESTful API design principles
+- Use proper HTTP status codes
+- Implement proper API versioning
+- Document APIs with OpenAPI/Swagger
+- Use proper response formats
+- Implement proper pagination
+- Use proper rate limiting
+- Implement proper API security
+
+### Authentication & Security
+- Use Guardian for authentication
+- Implement proper session management
+- Use proper CSRF protection
+- Implement proper XSS protection
+- Use proper input validation
+- Implement proper output encoding
+- Use proper security headers
+- Follow OWASP security guidelines
+
+### Testing
+- Use ExUnit for unit testing
+- Use Mox for mocking
+- Use proper test fixtures
+- Implement proper integration tests
+- Use proper property-based testing
+- Implement proper load testing
+- Use proper test coverage
+- Implement proper CI/CD pipeline
+
+### Performance
+- Use proper caching strategies
+- Implement proper lazy loading
+- Use proper database optimization
+- Implement proper code optimization
+- Use proper memory management
+- Implement proper load balancing
+- Use proper CDN integration
+- Implement proper monitoring
+
+### Build & Deployment
+- Use Mix for dependency management
+- Implement proper environment configurations
+- Use proper build optimization
+- Implement proper deployment strategies
+- Use proper CI/CD pipeline
+- Implement proper versioning
+- Use proper monitoring
+- Implement proper error tracking
+
+### Logging & Monitoring
+- Use Logger for logging
+- Implement proper log rotation
+- Use proper log aggregation
+- Implement proper error tracking
+- Use proper performance monitoring
+- Implement proper health checks
+- Use proper metrics collection
+- Implement proper alerting 
