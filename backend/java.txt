@@ -1,0 +1,120 @@
+# Java Backend Development Guide for AI Assistant
+
+## Project Overview
+- **Stack**: Java-based backend development
+- **Purpose**: Standardize AI-assisted code generation for Java backend applications
+
+## Coding Standards
+
+### Java Style
+- Follow Oracle's Java Code Conventions
+- Use 4 spaces for indentation
+- Use camelCase for variables and methods
+- Use PascalCase for class and interface names
+- Use UPPER_SNAKE_CASE for constants
+- Limit line length to 120 characters
+- Always use braces for control structures, even for single-line blocks
+- Use descriptive, meaningful names for variables, methods, and classes
+
+### Project Structure
+```
+src/
+├── main/
+│   ├── java/
+│   │   └── com/company/project/
+│   │       ├── config/         # Application configuration
+│   │       ├── controller/     # REST API controllers
+│   │       ├── dto/            # Data Transfer Objects
+│   │       ├── exception/      # Custom exceptions
+│   │       ├── model/          # Domain entities
+│   │       ├── repository/     # Data access interfaces
+│   │       ├── service/        # Business logic implementation
+│   │       ├── util/           # Utility classes
+│   │       └── Application.java # Main application class
+│   └── resources/
+│       ├── application.properties # Application properties
+│       └── db/
+│           └── migration/      # Database migrations
+└── test/
+    └── java/
+        └── com/company/project/
+            ├── controller/     # Controller tests
+            ├── repository/     # Repository tests
+            ├── service/        # Service tests
+            └── util/           # Utility tests
+```
+
+### Best Practices
+- Follow SOLID principles
+- Use dependency injection (Spring)
+- Implement proper exception handling
+- Use interfaces for service contracts
+- Write immutable objects where possible
+- Use builders for complex object creation
+- Prefer composition over inheritance
+- Use Optional for nullable return values
+- Avoid null returns; use empty collections instead
+- Use try-with-resources for resource management
+
+### Java Version
+- Use Java 17+ for modern language features
+- Leverage records for DTOs (Java 16+)
+- Use text blocks for multiline strings (Java 15+)
+- Utilize pattern matching (Java 17+)
+- Use switch expressions (Java 14+)
+
+### Database Interaction
+- Use Spring Data JPA or Hibernate for ORM
+- Implement repository pattern for data access
+- Use migrations for database schema changes (Flyway or Liquibase)
+- Create entity models with proper relationships
+- Implement proper transaction management
+- Use connection pooling (HikariCP)
+- Apply database indexing for performance
+
+### API Development
+- Follow RESTful API design principles
+- Use Spring MVC or Spring WebFlux for controllers
+- Implement proper DTO validation (Bean Validation)
+- Use appropriate HTTP status codes
+- Implement API versioning
+- Document APIs with OpenAPI/Swagger
+- Use consistent response formats
+- Implement pagination for list endpoints
+
+### Authentication & Security
+- Use Spring Security for authentication and authorization
+- Implement JWT or OAuth2 for token-based authentication
+- Apply proper password hashing (BCrypt)
+- Use HTTPS in production
+- Implement role-based access control
+- Validate all inputs
+- Protect against common vulnerabilities (XSS, CSRF, SQL Injection)
+- Follow OWASP security guidelines
+
+### Testing
+- Use JUnit 5 for unit testing
+- Use Mockito for mocking dependencies
+- Implement integration tests with TestContainers
+- Use Spring Boot Test for controller testing
+- Apply TDD (Test-Driven Development) approach
+- Maintain high test coverage
+- Use AssertJ for fluent assertions
+- Implement CI/CD pipeline for automated testing
+
+### Logging & Monitoring
+- Use SLF4J with Logback for logging
+- Implement structured logging
+- Use MDC (Mapped Diagnostic Context) for request tracing
+- Create health check endpoints
+- Implement metrics collection (Micrometer)
+- Set up proper logging levels for different environments
+
+### Build & Deployment
+- Use Maven or Gradle for build management
+- Implement Docker containerization
+- Use appropriate JVM flags for performance
+- Implement environment-specific configurations
+- Use Spring Profiles for environment switching
+- Apply continuous deployment practices
+- Implement circuit breakers for resilience (Resilience4j)
