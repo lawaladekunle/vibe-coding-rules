@@ -1,0 +1,152 @@
+# Ruby Backend Development Guide for AI Assistant
+
+## Project Overview
+- **Stack**: Ruby-based backend development
+- **Purpose**: Standardize AI-assisted code generation for Ruby backend applications
+
+## Coding Standards
+
+### Ruby Style
+- Follow the Ruby Style Guide by Rubocop
+- Use 2 spaces for indentation
+- Use snake_case for methods, variables, files, and directories
+- Use CamelCase for classes and modules
+- Use SCREAMING_SNAKE_CASE for constants
+- Limit lines to 80-100 characters
+- Use spaces around operators and after commas, colons, and semicolons
+- No spaces after `(`, `[` or before `]`, `)`
+- Use Ruby 1.9+ hash syntax when possible (`key: value` over `:key => value`)
+- Prefer `&&`/`||` over `and`/`or` for boolean expressions
+
+### Project Structure (Rails)
+```
+app/
+├── controllers/       # Request handlers
+├── models/           # Domain models & business logic
+├── services/         # Complex business operations
+├── views/            # Templates (if applicable)
+├── workers/          # Background jobs
+├── serializers/      # JSON formatting
+├── queries/          # Complex database queries
+├── policies/         # Authorization rules
+config/               # Application configuration
+db/
+├── migrate/          # Database migrations
+├── schema.rb         # Current schema
+lib/                  # Shared libraries
+spec/                 # Tests
+├── controllers/      # Controller tests
+├── models/           # Model tests
+├── services/         # Service tests
+├── workers/          # Worker tests
+└── factories/        # Test data factories
+```
+
+### Project Structure (Non-Rails)
+```
+lib/
+├── application_name/
+│   ├── models/       # Domain models
+│   ├── services/     # Business logic
+│   ├── clients/      # External API clients
+│   └── version.rb    # Version info
+├── application_name.rb # Main entrypoint
+bin/                 # Executable scripts
+config/              # Configuration
+db/                  # Database files
+spec/                # Tests
+Gemfile              # Dependencies
+Rakefile             # Tasks
+```
+
+### Best Practices
+- Follow the Principle of Least Surprise (POLS)
+- Prefer small, focused classes and methods
+- Make use of Ruby's built-in enumerable methods
+- Use keyword arguments for methods with multiple parameters
+- Use modules for shared functionality
+- Avoid monkey-patching core classes
+- Use blocks, procs, and lambdas effectively
+- Make use of Ruby's metaprogramming capabilities judiciously
+- Prefer composition over inheritance
+- Use meaningful method and variable names
+
+### Database Interaction
+- Use ActiveRecord (Rails) or Sequel for ORM
+- Create proper migrations for schema changes
+- Include database indexes for frequently queried columns
+- Use transactions for multiple related changes
+- Avoid N+1 queries (use includes/eager loading)
+- Write intention-revealing scopes for common queries
+- Use proper database constraints
+- Keep migrations reversible
+- Use UUIDs for public-facing IDs
+
+### API Development
+- Follow RESTful principles
+- Use proper HTTP status codes
+- Implement versioning (e.g., `/api/v1/resource`)
+- Use JSON for request/response formats
+- Validate request parameters
+- Implement consistent error responses
+- Use serializers for response formatting (Active Model Serializers, JSONAPI::Resources)
+- Implement proper pagination for collection endpoints
+
+### Authentication & Security
+- Use bcrypt for password hashing
+- Implement token-based authentication (JWT)
+- Use multi-factor authentication when appropriate
+- Store sensitive configuration in environment variables
+- Sanitize and validate all user inputs
+- Protect against common web vulnerabilities (XSS, CSRF, SQL Injection)
+- Implement proper rate limiting
+- Follow OWASP security guidelines
+- Use SSL/TLS in all environments
+
+### Testing
+- Write comprehensive tests (RSpec preferred)
+- Use factories (FactoryBot) instead of fixtures
+- Mock external services in tests
+- Test happy paths and edge cases
+- Implement integration tests for critical paths
+- Use VCR for HTTP interaction testing
+- Aim for high test coverage
+- Follow TDD/BDD principles
+
+### Background Jobs
+- Use Sidekiq or Resque for background processing
+- Implement idempotent job processing
+- Implement proper error handling and retries
+- Use scheduled jobs for recurring tasks
+- Monitor job queues and processing times
+
+### Performance Considerations
+- Use caching strategically (Rails cache, Redis)
+- Optimize database queries
+- Use background jobs for time-consuming operations
+- Implement pagination for large datasets
+- Use appropriate data structures
+- Consider read replicas for heavy read loads
+- Implement proper connection pooling
+
+### Error Handling
+- Use custom error classes for domain-specific errors
+- Implement global error handling
+- Log errors with appropriate context
+- Return helpful error messages to clients
+- Handle expected and unexpected exceptions differently
+
+### Logging & Monitoring
+- Implement structured logging
+- Include request IDs in logs
+- Log at appropriate levels (info, warn, error)
+- Set up monitoring for application health
+- Implement performance metrics collection
+- Monitor error rates and response times
+
+### Deployment
+- Use Docker for containerization
+- Implement CI/CD pipelines
+- Use environment-specific configuration
+- Implement blue-green deployment strategy
+- Consider serverless options where appropriate

@@ -1,0 +1,164 @@
+# Rust Backend Development Guide for AI Assistant
+
+## Project Overview
+- **Stack**: Rust-based backend development
+- **Purpose**: Standardize AI-assisted code generation for Rust backend applications
+
+## Coding Standards
+
+### Rust Style
+- Follow the official Rust style guide
+- Use 4 spaces for indentation
+- Use snake_case for functions, methods, variables, modules, and files
+- Use PascalCase for types, traits, and enum variants
+- Use SCREAMING_SNAKE_CASE for static constants
+- Use camelCase for foreign function interface (FFI) definitions
+- Format code with `rustfmt` using default settings
+- Use `clippy` for linting and code quality checks
+- Limit line length to 100 characters
+- Use the 2018 edition syntax (or newer)
+
+### Project Structure
+```
+my_project/
+├── .cargo/            # Cargo configuration
+├── src/
+│   ├── main.rs        # Application entry point
+│   ├── lib.rs         # Library root
+│   ├── bin/           # Additional binaries
+│   ├── api/           # API endpoints
+│   │   ├── mod.rs     # Module declaration
+│   │   └── routes/    # Route handlers
+│   ├── models/        # Data models
+│   │   └── mod.rs
+│   ├── services/      # Business logic
+│   │   └── mod.rs
+│   ├── repositories/  # Data access layer
+│   │   └── mod.rs
+│   ├── config/        # Configuration
+│   │   └── mod.rs
+│   ├── errors/        # Error types
+│   │   └── mod.rs
+│   └── utils/         # Utility functions
+│       └── mod.rs
+├── tests/             # Integration tests
+├── benches/           # Performance benchmarks
+├── migrations/        # Database migrations
+├── Cargo.toml         # Dependencies and metadata
+└── Cargo.lock         # Locked dependencies
+```
+
+### Best Practices
+- Embrace Rust's ownership system for memory safety
+- Use strong typing and avoid `unsafe` code when possible
+- Handle errors using `Result<T, E>` and `Option<T>` types
+- Implement traits for common functionalities
+- Use generics for reusable code
+- Write exhaustive pattern matching
+- Use meaningful and descriptive error messages
+- Leverage Rust's type system for domain modeling
+- Encapsulate implementation details with appropriate visibility
+- Use builder pattern for complex object construction
+- Implement the `Default` trait where appropriate
+- Use `derive` macros for common traits
+
+### Error Handling
+- Create custom error types using `thiserror`
+- Implement the `Display` and `Error` traits for error types
+- Use context with `anyhow` or `eyre` for rich error information
+- Propagate errors using the `?` operator
+- Avoid panicking in library code
+- Log errors with appropriate context
+- Return structured errors for API responses
+
+### Database Interaction
+- Use a type-safe ORM like `diesel` or `sqlx`
+- Implement a repository pattern for data access
+- Use migrations for schema changes
+- Implement proper transaction handling
+- Use connection pools for efficient database connections
+- Implement proper error handling for database operations
+- Use prepared statements to prevent SQL injection
+- Implement proper indexing for performance
+
+### API Development
+- Use frameworks like `actix-web`, `rocket`, or `axum`
+- Implement RESTful principles
+- Use appropriate HTTP status codes
+- Implement proper request validation
+- Use serialization/deserialization with `serde`
+- Implement middleware for common concerns
+- Use proper routing with typed paths
+- Document APIs with OpenAPI/Swagger using `utoipa`
+- Implement proper error handling for API responses
+
+### Authentication & Security
+- Use `jsonwebtoken` or similar for JWT implementation
+- Implement proper password hashing with `argon2` or `bcrypt`
+- Use HTTPS for all communications
+- Validate and sanitize all inputs
+- Implement rate limiting
+- Follow OWASP security guidelines
+- Use secure headers
+- Implement proper CORS configuration
+
+### Concurrency & Async
+- Use Rust's async/await syntax for asynchronous code
+- Implement proper error handling in async contexts
+- Use appropriate executor like `tokio` or `async-std`
+- Leverage Rust's concurrency primitives
+- Use channels for inter-task communication
+- Implement proper resource management
+- Use `Arc` and `Mutex` for shared state
+- Avoid blocking the async runtime
+
+### Testing
+- Write unit tests for all public functions
+- Use integration tests for API endpoints
+- Implement property-based testing with `proptest` where appropriate
+- Mock external dependencies in tests
+- Use test fixtures for common setup
+- Implement benchmarks for performance-critical code
+- Use `cargo test` for running tests
+- Use `cargo bench` for benchmarking
+
+### Configuration
+- Use a configuration management crate like `config`
+- Support multiple environments (development, staging, production)
+- Use environment variables for sensitive configuration
+- Implement proper validation for configuration values
+- Use strong typing for configuration
+- Implement secrets management
+
+### Logging & Monitoring
+- Use structured logging with `tracing` or `log`
+- Implement different log levels (error, warn, info, debug)
+- Include request IDs for tracing
+- Implement proper span context for distributed tracing
+- Set up metrics collection with `prometheus`
+- Implement health check endpoints
+- Monitor application performance
+
+### Performance Considerations
+- Use optimized data structures and algorithms
+- Implement proper caching strategies
+- Use connection pooling for external services
+- Optimize critical paths with profiling
+- Use async I/O for network operations
+- Minimize allocations in hot paths
+- Implement proper batching for database operations
+
+### Build & Deployment
+- Use multi-stage Docker builds for smaller images
+- Implement CI/CD pipelines with GitHub Actions or similar
+- Use release profiles for optimized builds
+- Implement proper versioning
+- Use cargo workspaces for multi-crate projects
+- Consider serverless options for appropriate workloads
+
+### Documentation
+- Document all public API with doc comments
+- Include examples in documentation
+- Generate documentation with `cargo doc`
+- Document error conditions and edge cases
+- Maintain a README with setup instructions and examples
