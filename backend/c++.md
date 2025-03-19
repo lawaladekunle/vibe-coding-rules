@@ -1,0 +1,162 @@
+# C++ Backend Development Guide for AI Assistant
+
+## Project Overview
+
+- **Stack**: C++-based backend development
+- **Purpose**: Standardize AI-assisted code generation for C++ applications
+
+## Coding Standards
+
+### C++ Style
+
+- Follow C++ Style Guide
+- Use 4 spaces for indentation
+- Use snake_case for variables and functions
+- Use PascalCase for classes and structs
+- Use UPPER_SNAKE_CASE for constants and macros
+- Limit line length to 100 characters
+- Use descriptive, meaningful names for functions and types
+- Use proper header guards
+- Use proper include guards
+- Use proper function declarations
+- Use proper type definitions
+- Use proper class definitions
+- Use proper template definitions
+- Use proper error handling
+
+### Project Structure
+
+```plaintext
+src/
+├── main.cpp             # Application entry point
+├── include/             # Header files
+│   ├── api.hpp         # API declarations
+│   ├── models.hpp      # Data model declarations
+│   ├── services.hpp    # Service declarations
+│   └── utils.hpp       # Utility declarations
+├── api/                # API implementation
+│   ├── routes.cpp      # Route handlers
+│   └── handlers.cpp    # Request handlers
+├── models/             # Data models
+│   └── entities.cpp    # Data structures
+├── services/           # Business logic
+│   └── business.cpp    # Business operations
+├── utils/              # Utility functions
+│   └── helpers.cpp     # Helper functions
+└── tests/              # Test files
+    └── test_*.cpp      # Test implementations
+```
+
+### Best Practices
+
+- Follow C++ best practices
+- Use proper memory management
+- Implement proper error handling
+- Use proper logging
+- Implement proper transaction management
+- Use proper caching
+- Implement proper security
+- Use proper performance optimization
+- Follow SOLID principles
+- Use proper design patterns
+- Implement proper testing
+- Use proper documentation
+
+### C++ Version
+
+- Use C++20 for new projects
+- Use proper concepts
+- Use proper ranges
+- Use proper coroutines
+- Use proper modules
+- Use proper constexpr
+- Use proper consteval
+- Use proper constinit
+
+### API Development
+
+- Use proper REST principles
+- Implement proper API versioning
+- Use proper HTTP methods
+- Implement proper status codes
+- Use proper request validation
+- Implement proper response formatting
+- Use proper error handling
+- Implement proper rate limiting
+
+### Database Interaction
+
+- Use proper SQLite/PostgreSQL
+- Implement proper migrations
+- Use proper connection pooling
+- Implement proper transaction management
+- Use proper query optimization
+- Implement proper indexing
+- Use proper caching
+- Implement proper backup strategies
+
+### Authentication & Security
+
+- Use proper JWT handling
+- Implement proper session management
+- Use proper password hashing
+- Implement proper CSRF protection
+- Use proper input validation
+- Implement proper output encoding
+- Use proper security headers
+- Implement proper audit logging
+
+### Testing
+
+- Use proper Google Test
+- Implement proper integration testing
+- Use proper mocking
+- Implement proper test containers
+- Use proper test coverage
+- Implement proper performance testing
+- Use proper security testing
+- Implement proper load testing
+
+### Performance
+
+- Use proper caching
+- Implement proper async operations
+- Use proper connection pooling
+- Implement proper query optimization
+- Use proper memory management
+- Implement proper garbage collection
+- Use proper profiling
+- Implement proper monitoring
+
+### Build & Deployment
+
+- Use proper CMake
+- Implement proper environment management
+- Use proper containerization
+- Implement proper CI/CD
+- Use proper version control
+- Implement proper monitoring
+- Use proper logging
+- Implement proper error tracking
+
+### Documentation
+
+- Use proper Doxygen
+- Implement proper API documentation
+- Use proper architecture documentation
+- Implement proper README files
+- Use proper deployment guides
+- Implement proper troubleshooting guides
+- Use proper maintenance guides
+- Implement proper code comments
+
+### Security
+
+- Use proper authentication
+- Implement proper authorization
+- Use proper data encryption
+- Implement proper input validation
+- Use proper output encoding
+- Implement proper security headers
+- Use proper audit logging
+- Implement proper vulnerability scanning
